@@ -23,7 +23,7 @@ spring:
       name: admin
       password: a
   application:
-    name: miscoservice-config-eureka-client
+    name: microservice-config-eureka-client
 ---
 server:
  port: 7002
@@ -45,4 +45,4 @@ spring:
       name: admin
       password: a
   application:
-    name: miscoservice-config-eureka-client
+    name: microservice-config-eureka-client
