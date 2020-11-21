@@ -4,7 +4,7 @@ spring:
         - beta
 ---
 server:
-  port:9001
+  port: 9001
 spring:
   profiles: beta
   application:
