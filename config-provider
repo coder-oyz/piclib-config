@@ -8,17 +8,14 @@ spring:
   profiles: beta
   application:
       name: provider
-server:
-  port: 8888
----
-spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: a
-    url: jdbc:mysql://localhost:3306/testmis81?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong
-
+    url: jdbc:mysql://localhost:3306/testmis81?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+server:
+  port: 8888
 
 management:
   endpoints:
