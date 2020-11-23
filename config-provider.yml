@@ -23,7 +23,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: a
-    url: jdbc:mysql://localhost:3306/testmis81?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    url: jdbc:mysql://localhost:3306/testmis81?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong
   application:
       name: provider
   profiles: beta
@@ -37,20 +37,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://admin:a@eureka:7301/eureka
-      #绕过登录页面，要在eureka中加一个类关闭csrf
-  instance:
-    instance-id: provider-product_1  #实例名
-    #再解决provider端的心跳问题:
-    lease-expiration-duration-in-seconds: 90 #如果现在超过了5s的时间间隔( default: 90 s )
-    lease-renewal-interval-in-seconds: 30   #设置心跳的时间间隔( default:30s )
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-#监控配置
-info:
-  app.name: MICROSERVICE-PROVIDER
-  company.name: yc
-  build.artifactId: $project.artifactId$
-  build.modelVersion: $project.modelVersion$
+      #绕过登录页面
