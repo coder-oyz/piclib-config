@@ -4,8 +4,6 @@ spring:
         - beta
 ---
 
-server:
-  port: 8888
 
 mybatis:
   configuration:
