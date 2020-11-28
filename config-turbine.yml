@@ -3,8 +3,7 @@ spring:
       active:
         - beta
 ---
-server:
-  port: 9101
+
 spring:
   profiles: beta
   application:
